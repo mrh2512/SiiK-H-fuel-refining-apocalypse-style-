@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <style>
+    .hidden { display:none !important; }
+    body { background:transparent; margin:0; padding:0; }
+  </style>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <div class="header">
+        <div class="title" id="title">CONSOLE</div>
+        <button id="close">✕</button>
+      </div>
+
+      <div class="body">
+        <div id="pumpBox" class="section hidden">
+          <div class="hint">Operate pumpjack. Skillbar required.</div>
+          <div class="buttons">
+            <button id="btnPump">PUMP CRUDE OIL</button>
+          </div>
+        </div>
+
+        <div id="refineryBox" class="section hidden">
+          <div class="row"><span>INPUT</span><b id="refIn">-</b></div>
+          <div class="row"><span>OUTPUT</span><b id="refOut">-</b></div>
+          <div class="hint">Refine crude into refined fuel. Skillbar required.</div>
+          <div class="buttons">
+            <button id="btnRefine">REFINE</button>
+          </div>
+        </div>
+
+        <div id="drumBox" class="section hidden">
+          <div class="row"><span>LEVEL</span><b id="drumLevelText">0%</b></div>
+          <div class="bar"><div class="barFill" id="drumBar"></div></div>
+
+          <div class="subrow">
+            <div class="chip" id="drumLevelNumbers">0 / 0</div>
+            <div class="chip" id="drumDrain">Drain: 0</div>
+            <div class="chip" id="drumAdd">Pour: 0</div>
+          </div>
+
+          <div class="hint">Pour refined fuel to increase level. Fill jerrycans to drain it.</div>
+
+          <div class="buttons">
+            <button id="btnPour">POUR REFINED FUEL</button>
+            <button id="btnFill">FILL JERRYCAN</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <div class="tiny">SiiK-H-fuel-refining</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

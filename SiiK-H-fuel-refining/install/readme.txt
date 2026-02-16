@@ -175,8 +175,3 @@ info = {
   fuel = 25,
   maxFuel = 25
 }
-
-
-The UI uses item.info.fuel and item.info.maxFuel to compute the bar + tooltip.
-
-If you paste me your qb-inventory/html/index.html item-slot block (just ~40 lines around the slot), I’ll tell you exactly where to insert the bar snippet so it’s guaranteed to render in your layout.
